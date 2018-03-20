@@ -4,12 +4,18 @@ import { catalog } from './../../../data/mock.json';
 
 const App = ({ message }) => <div>{ message }</div>;
 
-const Items = ({name, imageURL, currency, price } ) => catalog.map((data) =>
-    <div>
-        <img src={data.imageURL} alt= "imagen"/>
-        <p> {data.name} </p>
-        <p> {data.currency} {data.price} </p>
-    </div>);
+const Title = ({ title }) => <h2>{ title } </h2>;
 
-ReactDOM.render(<App message="hello world" />, document.getElementById('app'));
-ReactDOM.render(<Items/>, document.getElementById('app'));
+const Items = ({name, imageURL, currency, price } ) => catalog.map((data) =>
+  <div className="products">
+    <div className="productBox">
+      <img src={data.imageURL} alt= "imagen"/>
+      <p> {data.name} </p>
+      <p> {data.currency} {data.price} </p>
+      <button>Add to cart</button>
+    </div>
+  </div>);
+
+// ReactDOM.render(<App message="hello world" />, document.getElementById('app'));
+ReactDOM.render(<Title title="Products List"/>, document.getElementById('appTitle'));
+ReactDOM.render(<Items/>, document.getElementById('productsCont'));

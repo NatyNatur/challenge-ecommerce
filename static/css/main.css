@@ -1,1 +1,20 @@
 /* you can add any styles you think could improve user's experience */
+#app {
+    text-align: center;
+}
+
+.products {
+    display: inline-flex;
+}
+
+.productBox {
+    margin: 1em;
+    outline: 1px solid gray;
+}
+
+button {
+    background-color: #6f186f;
+    color: #FFF;
+    padding: .8em;
+    border-radius: 15px;
+}
