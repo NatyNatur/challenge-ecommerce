@@ -3,6 +3,18 @@
     text-align: center;
 }
 
+#getTotal {
+    background-color: #2a9c2adb;
+    color: #FFF;
+    width: 10em;
+    height: 3em;
+}
+
+#getTotal p {
+    margin: 0;
+    padding: 1em 2em;
+}
+
 .products {
     display: inline-flex;
 }
@@ -12,7 +24,7 @@
     outline: 1px solid gray;
 }
 
-button {
+.addCart {
     background-color: #6f186f;
     color: #FFF;
     padding: .8em;

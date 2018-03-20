@@ -12,7 +12,7 @@ const Items = ({id, name, imageURL, currency, price } ) => catalog.map((data) =>
       <img src={data.imageURL} alt= "imagen"/>
       <p> {data.name} </p>
       <p> {data.currency} {data.price} </p>
-      <button>Add to cart</button>
+      <button className="addCart">Add to cart</button>
     </div>
   </div>);
 
