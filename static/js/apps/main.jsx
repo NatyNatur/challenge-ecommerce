@@ -6,9 +6,9 @@ const App = ({ message }) => <div>{ message }</div>;
 
 const Title = ({ title }) => <h2>{ title } </h2>;
 
-const Items = ({name, imageURL, currency, price } ) => catalog.map((data) =>
+const Items = ({id, name, imageURL, currency, price } ) => catalog.map((data) =>
   <div className="products">
-    <div className="productBox">
+    <div className="productBox" id={data.id}>
       <img src={data.imageURL} alt= "imagen"/>
       <p> {data.name} </p>
       <p> {data.currency} {data.price} </p>
